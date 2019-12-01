@@ -188,8 +188,8 @@ p {
   display: block;
   margin: 0 0 20px 0;
   font-size: 24px;
-  color: #445162;  
-};
+  color: #445162;
+}
 
 .screen-fig-text {
   display: block;
@@ -316,7 +316,7 @@ p {
   color: #fff;
   text-align: left;
   list-style-position: inside;
-  padding-inline-start: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .buy-item-btn {
@@ -365,24 +365,26 @@ p {
   justify-content: center;
   width: 500px;
 }
-.contacts-form input::placeholder {
+.contacts-form input::placeholder,
+.contacts-form textarea::placeholder {
   color: #445162; 
 }
 
 .contacts-form input[type="text"],
 .contacts-form input[type="email"], 
-.contacts-form input[type="textarea"] {
+.contacts-form textarea {
   width: 100%;
   margin: 0 0 25px 0;
   border: 1px solid #fff;
   border-radius: 4px;
+  font-family: "Arial";
   font-size: 16px;
   padding: 10px;
   color: #445162;
   outline: none;
 }
 
-.contacts-form input[type="textarea"] {
+.contacts-form textarea {
   height: 170px;
   vertical-align: top;
 }
@@ -397,15 +399,10 @@ p {
   background-color: #fff;
   text-transform: uppercase;
 }
-.contacts-social {
-  width: 250px;
-  background-color: #fff;
-  margin: 0 0 0 46px;
-}
 
 .contacts-form input[type="text"]:hover,
 .contacts-form input[type="email"]:hover, 
-.contacts-form input[type="textarea"]:hover,
+.contacts-form textarea:hover,
 .contacts-form input[type="submit"]:hover {
   background-color: #989898;
   color: #fff;
@@ -415,4 +412,25 @@ p {
 
 .contacts-form input:hover::placeholder {
   color: #fff;
+}
+
+.contacts-social {
+  width: 250px;
+  border: solid 1px #fff;
+  margin: 0 0 0 46px;
+}
+
+.contacts-social-twitter {
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.foot {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  color: #445162; 
 }
