@@ -232,7 +232,6 @@ p {
 }
 
 .reviews-txt-ref {
-  text-decoration: none;
   color: #333333;
   position: relative;
   margin: 0 0 20px 100px;
@@ -266,6 +265,7 @@ p {
   margin: 0 0 0 0;
   color: #989898;
   font-style: normal;
+  text-decoration: none;
 }
 
 /* =========buy========= */
@@ -339,6 +339,9 @@ p {
   background-color: #989898;
   outline: none;
 }
+.buy-item-btn:active {
+  border: solid 1px #445162;
+}
 
 /* =========footer========= */
 
@@ -407,6 +410,16 @@ p {
   background-color: #989898;
   color: #fff;
   border: 1px solid #fff;
+  outline: none;
+}
+
+.contacts-form input[type="submit"]:active {
+  background-color: #989898;
+  border: 1px solid #989898;
+  outline: none;
+}
+
+.contacts-form input[type="submit"]:focus {
   outline: none;
 }
 
