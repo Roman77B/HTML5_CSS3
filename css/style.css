@@ -39,19 +39,22 @@ p {
   line-height: 36px;
   font-weight: 400;
 }
+
 .main-header-list-item {
   position: relative;
 }
+
 .main-header-list-item:before {
   content: "";
   display: block;
   width: 24px;
   height: 18px;
-  background-image: url('../img/check_icon.png');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="18"><polygon points="1,11 8,18 23,4 20,1 8,12 4,8" fill="white" stroke="white"/></svg>') no-repeat;
   position: absolute;
   top: 8px;
   left: -34px;
 }
+
 .main-header-photo {
   display: block;
   width: 470px;
@@ -412,6 +415,9 @@ p {
   border: 1px solid #fff;
   outline: none;
 }
+.contacts-form input[type="submit"] {
+  font-weight: bold;
+}
 
 .contacts-form input[type="submit"]:active {
   background-color: #989898;
@@ -429,15 +435,69 @@ p {
 
 .contacts-social {
   width: 250px;
-  border: solid 1px #fff;
   margin: 0 0 0 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding: 5px;
 }
 
-.contacts-social-twitter {
+.contacts-social-list-i {
+  display: block;
+  width: 100%;
+  position: relative;
+  left: 35px;
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 30px 0;
+}
+
+
+.contacts-social-list-i:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #445162;
+  position: absolute;
+  left: -35px;
+  top: -5px;
+  background-image: url(../img/sprite-ico.jpg);
+}
+
+.contacts-social-list-i:nth-of-type(1):before {
+  background-position: 2px 1px;
+}
+
+.contacts-social-list-i:nth-of-type(2):before {
+  background-position: 1px -43px;
+}
+
+.contacts-social-list-i:nth-of-type(3):before {
+  background-position: 2px -86px;
+}
+
+.contacts-social-list-i:nth-of-type(4):before {
+  background-position: 2px -128px;
+}
+
+.contacts-social-pic {
   background-color: #fff;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-social-pic-icon {
+  color: #445162; 
+}
+
+.contacts-social-pic-icon:hover {
+  color: #989898;
 }
 
 .foot {
@@ -446,4 +506,11 @@ p {
   text-align: center;
   padding: 10px;
   color: #445162; 
+}
+.foot-ref {
+  font-family: "Arial";
+  font-size: 12px;
+  text-align: center;
+  color: #445162; 
+  text-decoration: none;
 }
